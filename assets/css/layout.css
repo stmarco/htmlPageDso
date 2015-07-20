@@ -1,6 +1,16 @@
 /* ----------------------------
 layout
 ---------------------------- */
+/* page */
+.page
+{
+    max-width: 100%;
+    background: url("../img/backgrounds/chopin-1200.jpg") no-repeat;
+    background-size: auto;
+    background-position: top;
+    background-attachment: fixed;
+    margin-top: 1em;
+}
 
 /* row */
 .row
@@ -17,7 +27,7 @@ layout
 .row--dark-red,
 .row--black { color: #fff;}
 .row--dark-grey { background: #282e37;}
-.row--dark-red { background: darkred;}
+.row--dark-red { background: none;}
 .row--black { background: #000;}
 
 /* row-padding */
@@ -47,11 +57,12 @@ layout
 
 .container-narrow { max-width: 34em; background: yellow;}
 .container-medium { max-width: 52em; background: orange;}
-.container-wide { max-width: 58em; background: cyan;}
+.container-wide { max-width: 58em; background: none}
 
 /* columns */
 .col-narrow,
-.col-narrow--right { margin-bottom: 1.5em; }
+.col-narrow--right { margin-bottom: 1.5em; background: none
+}
 
 /* ----------------------------
 wide
@@ -95,7 +106,7 @@ wide
     .col-narrow,
     .col-narrow--right
     {
-        width: 25%;
+        width: 33%;
         margin-bottom: 0;
     }
 }

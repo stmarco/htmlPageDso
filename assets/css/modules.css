@@ -23,7 +23,7 @@ header
 
 .header__logo
 {
-
+    margin-top: 1em;
 }
 
 .header__nav
@@ -94,15 +94,24 @@ banner-content
 
 .banner-content
 {
-
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
 }
 
 .banner-content__heading
 {
-
+    display: inline-block;
+    padding: 0.5em;
+    margin: 1em 0 1em 0;
+    color: #000;
+    background-color: #ffffff;
+    background-color: hsla(100,100%,100%, 0.8);
+    border-radius: 0.5em;
 }
+.banner-content__heading-intro {font-style: italic;}
 
-@media (min-width: 38em)
+@media (min-width: 42em)
 {
     .banner-content
     {

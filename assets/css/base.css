@@ -3,10 +3,11 @@ base
 ---------------------------- */
 
 html,
-body
-{
-    color: #666 ;
+body {
+    color: #666;
     background: #fff;
+    max-width: 1200px;
+    margin: auto;
 }
 
 body
