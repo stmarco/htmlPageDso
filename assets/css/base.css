@@ -94,6 +94,10 @@ blockquote { margin: 0; }
 {
     color: #f5f5dc;
 }
+ul
+{
+    margin-top: 0.5em;
+}
 
 /* ----------------------------
 wide
