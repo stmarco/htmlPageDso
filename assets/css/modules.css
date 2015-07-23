@@ -23,7 +23,7 @@ header
 
 .header__logo
 {
-    margin-top: 1em;
+    display: none;
 }
 
 .header__nav
@@ -71,20 +71,30 @@ header
 
 @media (min-width: 38em)
 {
-    .header
-    {
+}
 
+@media (min-width: 42em)
+{
+    .header__logo
+    {
+/*        background: url("../img/logo-dso.png") no-repeat top;
+        background-size: contain; */
+        position: absolute;
+        display: block;
+        float: left;
+        height: 100%;
     }
-
-    .header__nav
+    .header__logo-table
     {
-
+        display: table;
+        width: 100%;
+        height: 100%;
     }
-
-    .header__nav a
+    .header__logo-cell
     {
-
-
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
     }
 }
 
@@ -95,11 +105,9 @@ banner-content
 .banner-content
 {
     text-align: center;
-    vertical-align: middle;
-    height: 100%;
 }
 
-.banner-content__heading
+.banner-content__heading-text
 {
     display: inline-block;
     padding: 0.5em;
@@ -108,10 +116,62 @@ banner-content
     background-color: #ffffff;
     background-color: hsla(100,100%,100%, 0.8);
     border-radius: 0.5em;
+    min-height: 8em;
 }
-.banner-content__heading-intro {font-style: italic;}
+.banner-content__heading
+{
+    background: url("../img/logo-dso.png") no-repeat top;
+    background-size: contain;
+    margin: 0 auto;
+}
 
+.banner-content__heading-intro
+{
+    font-style: italic;
+    padding: 0 2em;
+}
+
+@media (min-width: 30em)
+{
+    .banner-content__heading
+    {
+        width: 80%;
+    }
+
+    .banner-content__heading-text
+    {
+    }
+}
+@media (min-width: 38em)
+{
+    .banner-content__heading
+    {
+        width: 90%;
+    }
+
+    .banner-content__heading-text
+    {
+    }
+}
 @media (min-width: 42em)
+{
+    .banner-content__heading
+    {
+        width: 61%;
+        background: none;
+    }
+
+    .banner-content__heading-text
+    {
+        float: right;
+    }
+    .banner-content img
+    {
+        max-height: 10em;
+    }
+}
+
+@media (min-width: 50em)
 {
     .banner-content
     {
@@ -122,8 +182,12 @@ banner-content
     {
 
     }
+    .banner-content__heading-background
+    {
+        background: none;
+        float: right;
+    }
 }
-
 
 /* ----------------------------
 footer
@@ -160,6 +224,13 @@ footer
     display: inline-block;
     margin: 0 1em 0 0;
 }
+
+.bg-white
+{
+    background: #ffffff;
+}
+
+
 
 @media (min-width: 38em)
 {

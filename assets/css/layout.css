@@ -4,12 +4,26 @@ layout
 /* page */
 .page
 {
-    max-width: 100%;
-    background: url("../img/backgrounds/chopin-1200.jpg") no-repeat;
-    background-size: auto;
-    background-position: top;
-    background-attachment: fixed;
-    margin-top: 1em;
+    max-width: 1200px;
+    width: 100%;
+    min-height: 60em;
+    text-align: center;
+    position: relative;
+}
+.home
+{
+    background: #f5f5dc url("../img/backgrounds/chopin-480.jpg") repeat-y fixed top;
+    background-size: contain;
+}
+.concerten
+{
+    background: #f5f5dc url("../img/backgrounds/cello-480.jpg") repeat-y fixed top;
+    background-size: contain;
+}
+.partituur
+{
+    background: #f5f5dc url("../img/backgrounds/partituur_480.jpg") repeat-y fixed top;
+    background-size: contain;
 }
 
 /* row */
@@ -20,17 +34,29 @@ layout
 }
 
 /* row-colors */
-.row--white { background: #fff; }
-.row--grey { background: #f8f8f8; }
-.row--blue { background: #3bb2d0; }
-.row--dark-grey,
+/* donkere rows */
+.row--dark-red { background: darkred;}
+.row--black { background: #000;}
 .row--dark-red,
 .row--black { color: #fff;}
-.row--dark-grey { background: #282e37;}
-.row--dark-red { background: none;}
-.row--black { background: #000;}
+.row--dark-red a,
+.row--black a { color: peru;}
+/* bleke rows */
+.row--beige { background: beige;}
+.row--white { background: white;}
+
 
 /* row-padding */
+.row--padding-min
+{
+    padding: 0.5em 0;
+}
+.row--padding-narrow
+{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /* 16px/16px */
+}
 .row--padding-medium
 {
     padding-top: 2.1875em;
@@ -55,21 +81,71 @@ layout
     padding-right: 1.5em;
 }
 
-.container-narrow { max-width: 34em; background: yellow;}
-.container-medium { max-width: 52em; background: orange;}
+.container-narrow { max-width: 34em; background: none;}
+.container-medium { max-width: 52em; background: none;}
 .container-wide { max-width: 58em; background: none}
 
 /* columns */
 .col-narrow,
-.col-narrow--right { margin-bottom: 1.5em; background: none
+.col-narrow--right
+{
+    margin-bottom: 1.5em;
+    background: none;
+    text-align: center;
 }
+.col-narrow img,
+.col-narrow--right img
+{
+    max-height: 15em;
+    /* 200px/16px */
+}
+
+.col-wide,
+.col-wide--right
+{
+    text-align: left;
+}
+
+.col-full
+{
+    width: 100%;
+    text-align: left;
+    margin-top: 0.5em;
+}
+
 
 /* ----------------------------
 wide
 ---------------------------- */
+/* 480px 30em */
+@media (min-width: 30em)
+{
+    .home
+    {
+        background: #f5f5dc url("../img/backgrounds/chopin-800.jpg") repeat-y fixed top;
+        background-size: contain;
+    }
+    .concerten
+    {
+        background: #f5f5dc url("../img/backgrounds/cello-800a.jpg") repeat-y fixed top;
+        background-size: contain;
+    }
+    .partituur
+    {
+        background: #f5f5dc url("../img/backgrounds/partituur_800.jpg") repeat-y fixed top;
+        background-size: contain;
+    }
+}
 
+/* 608px 38em */
 @media (min-width: 38em)
 {
+    .row--padding-narrow
+    {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        /* 36px/18px */
+    }
     .row--padding-medium
     {
         padding-top: 3.8889em;
@@ -94,12 +170,22 @@ wide
 
     .col-narrow,
     .col-medium,
-    .col-wide { float: left; }
+    .col-wide
+    {
+        float: left;
+        vertical-align: middle;
+        position: relative;
+    }
     .col-narrow--right,
     .col-wide--right { float: right; }
 
     .col-wide,
-    .col-wide--right { width: 61%; }
+    .col-wide--right
+    {
+        width: 61%;
+        max-width: 40em;
+        text-align: left;
+    }
 
     .col-medium { width: 50%; }
 
@@ -108,5 +194,50 @@ wide
     {
         width: 33%;
         margin-bottom: 0;
+    }
+    .col-narrow img,
+    .col-narrow--right img
+    {
+        max-height: 12em;
+        /* 216px/18px */
+    }
+
+
+}
+
+/* 800px 50em */
+@media (min-width: 50em)
+{
+    .home
+    {
+        background: #f5f5dc url("../img/backgrounds/chopin-1200.jpg") repeat-y fixed top;
+        background-size: cover;
+    }
+    .concerten
+    {
+        background: #f5f5dc url("../img/backgrounds/cello-1200a.jpg") repeat-y fixed top;
+        background-size: contain;
+    }
+    .partituur
+    {
+        background: #f5f5dc url("../img/backgrounds/partituur_1200a.jpg") repeat-y fixed top;
+        background-size: contain;
+    }
+
+    .col-wide--right
+    {
+        width: 61%;
+    }
+}
+/* 1200px 75em */
+@media (min-width: 75em) {
+    .partituur {
+        background: #f5f5dc url("../img/backgrounds/partituur_1200b.jpg") repeat-y fixed top;
+    }
+    .home,
+    .concerten,
+    .partituur
+    {
+        background-size: 1200px;
     }
 }
