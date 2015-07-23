@@ -100,6 +100,8 @@ layout
     /* 200px/16px */
 }
 
+.col-medium,
+.col-medium--right,
 .col-wide,
 .col-wide--right
 {
@@ -177,6 +179,7 @@ wide
         position: relative;
     }
     .col-narrow--right,
+    .col-medium--right,
     .col-wide--right { float: right; }
 
     .col-wide,
@@ -187,7 +190,11 @@ wide
         text-align: left;
     }
 
-    .col-medium { width: 50%; }
+    .col-medium,
+    .col-medium--right 
+    { 
+        width: 50%; 
+    }
 
     .col-narrow,
     .col-narrow--right

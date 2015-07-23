@@ -77,8 +77,6 @@ header
 {
     .header__logo
     {
-/*        background: url("../img/logo-dso.png") no-repeat top;
-        background-size: contain; */
         position: absolute;
         display: block;
         float: left;
