@@ -6,7 +6,7 @@ html,
 body
 {
     color: #777;
-    background: #fff;
+    background-color: darkgreen;
 }
 
 body
@@ -42,6 +42,25 @@ a:focus img { background: #000; }
 a:hover img { background: #3bb2d0; }
 a:active img { background: #af0000; }
 blockquote { margin: 0; }
+
+.blauw
+{
+    background-color: blue;
+}
+.rood
+{
+    background-color: red;
+}
+.grijs
+{
+    background-color: grey;
+}
+
+.page
+{
+    max-width: 70em;
+    margin: 0 auto;
+}
 
 /* ----------------------------
 wide

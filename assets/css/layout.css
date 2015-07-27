@@ -14,12 +14,6 @@ layout
 .row--grey { background: #f8f8f8; }
 .row--blue { background: #3bb2d0; }
 
-.row--dark-grey
-{
-    color: #fff;
-    background: #282e37;
-}
-
 /* row-padding */
 .row--padding-medium
 {
@@ -45,13 +39,42 @@ layout
     padding-right: 1.5em;
 }
 
-.container-narrow { max-width: 34em; }
-.container-medium { max-width: 52em; }
-.container-wide { max-width: 58em; }
+.container-narrow
+{
+    max-width: 34em;
+    background-color: yellow;
+}
+.container-medium
+{
+    max-width: 52em;
+    background-color: greenyellow;
+}
+.container-wide
+{
+    max-width: 58em;
+    background-color: orange;
+}
 
 /* columns */
 .col-narrow,
-.col-narrow--right { margin-bottom: 1.5em; }
+.col-narrow--right
+{
+    margin-bottom: 1.5em;
+    background-color: beige;
+}
+.col-medium
+{
+    background-color: brown;
+}
+.col-medium--right
+{
+    background-color: peru;
+}
+.col-wide,
+.col-wide--right
+{
+    background-color: burlywood;
+}
 
 /* ----------------------------
 wide
@@ -59,20 +82,23 @@ wide
 
 @media (min-width: 38em)
 {
+    .row--padding-narrow
+    {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
     .row--padding-medium
     {
         padding-top: 3.8889em;
         padding-bottom: 3.8889em;
         /* 70px/18px */
     }
-
     .row--padding-wide
     {
         padding-top: 5.5556em;
         padding-bottom: 5.5556em;
         /* 100px/18px */
     }
-
     .container-narrow,
     .container-medium,
     .container-wide
@@ -83,14 +109,19 @@ wide
 
     .col-narrow,
     .col-medium,
-    .col-wide { float: left; }
+    .col-wide
+    {
+        float: left;
+    }
     .col-narrow--right,
+    .col-medium--right,
     .col-wide--right { float: right; }
 
     .col-wide,
     .col-wide--right { width: 61%; }
 
-    .col-medium { width: 50%; }
+    .col-medium,
+    .col-medium--right { width: 50%; }
 
     .col-narrow,
     .col-narrow--right
