@@ -43,6 +43,14 @@ a:hover img { background: #3bb2d0; }
 a:active img { background: #af0000; }
 blockquote { margin: 0; }
 
+p
+{
+    background-color: rgba(255,100,100,0.7);
+    margin-left: 2em;
+    color: black;
+}
+
+
 .blauw
 {
     background-color: blue;

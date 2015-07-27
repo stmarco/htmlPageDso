@@ -7,19 +7,34 @@ banner
 
 }
 
+.meter
+{
+    background-color: rgba(200,200,200,0.3);
+    background-image: url('../img/meter_1280.png');
+    background-repeat: repeat-y;
+}
+
+.meter-100-center-top
+{
+    background-size: 100%;
+    background-position: center top;
+}
+.meter-contain-center-top
+{
+    background-size: contain;
+    background-position: center top;
+}
+.meter-cover-center-top
+{
+    background-size: cover;
+    background-position: center top;
+}
+
 @media (min-width: 38em)
 {
 
 }
 
-.meter
-{
-    background-color: rgba(200,200,200,0.3);
-    background-image: url('../img/meter_1280.png');
-    background-size: contain;
-    background-position: center top;
-    background-repeat: repeat-y;
-}
 
 /* ----------------------------
 header
